@@ -16,7 +16,6 @@ class ArcLayer: CAShapeLayer {
         super.init()
 
         fillColor = UIColor.blue.cgColor
-        path = UIBezierPath(rect: .zero).cgPath
     }
   
     required init(coder aDecoder: NSCoder) {
