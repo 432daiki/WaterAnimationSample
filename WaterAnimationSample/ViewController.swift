@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet private weak var parentView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let animationLayer = ArcLayer()
-        animationLayer.frame = CGRect(x: 10, y: 50, width: 300, height: 300)
-        view.layer.addSublayer(animationLayer)
+        animationLayer.frame = parentView.bounds
+        parentView.layer.addSublayer(animationLayer)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             animationLayer.animate()

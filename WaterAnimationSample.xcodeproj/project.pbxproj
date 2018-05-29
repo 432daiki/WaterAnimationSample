@@ -58,8 +58,8 @@
 			children = (
 				561AA85A20BD607B00E9DB89 /* AppDelegate.swift */,
 				561AA85C20BD607B00E9DB89 /* ViewController.swift */,
-				561AA86C20BD630900E9DB89 /* ArcLayer.swift */,
 				561AA85E20BD607B00E9DB89 /* Main.storyboard */,
+				561AA86C20BD630900E9DB89 /* ArcLayer.swift */,
 				561AA86120BD607C00E9DB89 /* Assets.xcassets */,
 				561AA86320BD607C00E9DB89 /* LaunchScreen.storyboard */,
 				561AA86620BD607C00E9DB89 /* Info.plist */,
