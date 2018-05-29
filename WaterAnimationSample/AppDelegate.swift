@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  WanterAnimationSample
+//  WaterAnimationSample
 //
 //  Created by Daiki Shimizu on 2018/05/29.
 //  Copyright © 2018年 Daiki Shimizu. All rights reserved.

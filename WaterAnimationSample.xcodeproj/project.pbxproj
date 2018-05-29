@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		561AA85720BD607B00E9DB89 /* WanterAnimationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanterAnimationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		561AA85720BD607B00E9DB89 /* WaterAnimationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterAnimationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		561AA85A20BD607B00E9DB89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		561AA85C20BD607B00E9DB89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		561AA85F20BD607B00E9DB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		561AA84E20BD607A00E9DB89 = {
 			isa = PBXGroup;
 			children = (
-				561AA85920BD607B00E9DB89 /* WanterAnimationSample */,
+				561AA85920BD607B00E9DB89 /* WaterAnimationSample */,
 				561AA85820BD607B00E9DB89 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		561AA85820BD607B00E9DB89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				561AA85720BD607B00E9DB89 /* WanterAnimationSample.app */,
+				561AA85720BD607B00E9DB89 /* WaterAnimationSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		561AA85920BD607B00E9DB89 /* WanterAnimationSample */ = {
+		561AA85920BD607B00E9DB89 /* WaterAnimationSample */ = {
 			isa = PBXGroup;
 			children = (
 				561AA85A20BD607B00E9DB89 /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				561AA86320BD607C00E9DB89 /* LaunchScreen.storyboard */,
 				561AA86620BD607C00E9DB89 /* Info.plist */,
 			);
-			path = WanterAnimationSample;
+			path = WaterAnimationSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		561AA85620BD607A00E9DB89 /* WanterAnimationSample */ = {
+		561AA85620BD607A00E9DB89 /* WaterAnimationSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 561AA86920BD607C00E9DB89 /* Build configuration list for PBXNativeTarget "WanterAnimationSample" */;
+			buildConfigurationList = 561AA86920BD607C00E9DB89 /* Build configuration list for PBXNativeTarget "WaterAnimationSample" */;
 			buildPhases = (
 				561AA85320BD607A00E9DB89 /* Sources */,
 				561AA85420BD607A00E9DB89 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = WanterAnimationSample;
+			name = WaterAnimationSample;
 			productName = WanterAnimationSample;
-			productReference = 561AA85720BD607B00E9DB89 /* WanterAnimationSample.app */;
+			productReference = 561AA85720BD607B00E9DB89 /* WaterAnimationSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 561AA85220BD607A00E9DB89 /* Build configuration list for PBXProject "WanterAnimationSample" */;
+			buildConfigurationList = 561AA85220BD607A00E9DB89 /* Build configuration list for PBXProject "WaterAnimationSample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				561AA85620BD607A00E9DB89 /* WanterAnimationSample */,
+				561AA85620BD607A00E9DB89 /* WaterAnimationSample */,
 			);
 		};
 /* End PBXProject section */
@@ -286,12 +286,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65PL4VZ3UU;
-				INFOPLIST_FILE = WanterAnimationSample/Info.plist;
+				INFOPLIST_FILE = WaterAnimationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.432daiki.WanterAnimationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.432daiki.WaterAnimationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,12 +304,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65PL4VZ3UU;
-				INFOPLIST_FILE = WanterAnimationSample/Info.plist;
+				INFOPLIST_FILE = WaterAnimationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.432daiki.WanterAnimationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.432daiki.WaterAnimationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		561AA85220BD607A00E9DB89 /* Build configuration list for PBXProject "WanterAnimationSample" */ = {
+		561AA85220BD607A00E9DB89 /* Build configuration list for PBXProject "WaterAnimationSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				561AA86720BD607C00E9DB89 /* Debug */,
@@ -328,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		561AA86920BD607C00E9DB89 /* Build configuration list for PBXNativeTarget "WanterAnimationSample" */ = {
+		561AA86920BD607C00E9DB89 /* Build configuration list for PBXNativeTarget "WaterAnimationSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				561AA86A20BD607C00E9DB89 /* Debug */,
