@@ -22,7 +22,7 @@ class ArcLayer: CAShapeLayer {
         fatalError("init(coder:) has not been implemented")
     }
 
-    let arcPathPre: UIBezierPath = {
+    var arcPathPre: UIBezierPath {
         let arcPath = UIBezierPath()
         arcPath.move(to: CGPoint(x: 0.0, y: 100.0))
         arcPath.addLine(to: CGPoint(x: 0.0, y: 99.0))
@@ -30,9 +30,9 @@ class ArcLayer: CAShapeLayer {
         arcPath.addLine(to: CGPoint(x: 100.0, y: 100.0))
         arcPath.close()
         return arcPath
-    }()
+    }
 
-    let arcPathStarting: UIBezierPath = {
+    var arcPathStarting: UIBezierPath {
         let arcPath = UIBezierPath()
         arcPath.move(to: CGPoint(x: 0.0, y: 100.0))
         arcPath.addLine(to: CGPoint(x: 0.0, y: 80.0))
@@ -42,9 +42,9 @@ class ArcLayer: CAShapeLayer {
         arcPath.addLine(to: CGPoint(x: 100.0, y: 100.0))
         arcPath.close()
         return arcPath
-    }()
+    }
 
-    let arcPathLow: UIBezierPath = {
+    var arcPathLow: UIBezierPath {
         let arcPath = UIBezierPath()
         arcPath.move(to: CGPoint(x: 0.0, y: 100.0))
         arcPath.addLine(to: CGPoint(x: 0.0, y: 60.0))
@@ -54,9 +54,9 @@ class ArcLayer: CAShapeLayer {
         arcPath.addLine(to: CGPoint(x: 100.0, y: 100.0))
         arcPath.close()
         return arcPath
-    }()
+    }
 
-    let arcPathMid: UIBezierPath = {
+    var arcPathMid: UIBezierPath {
         let arcPath = UIBezierPath()
         arcPath.move(to: CGPoint(x: 0.0, y: 100.0))
         arcPath.addLine(to: CGPoint(x: 0.0, y: 40.0))
@@ -66,9 +66,9 @@ class ArcLayer: CAShapeLayer {
         arcPath.addLine(to: CGPoint(x: 100.0, y: 100.0))
         arcPath.close()
         return arcPath
-    }()
+    }
 
-    let arcPathHigh: UIBezierPath = {
+    var arcPathHigh: UIBezierPath {
         let arcPath = UIBezierPath()
         arcPath.move(to: CGPoint(x: 0.0, y: 100.0))
         arcPath.addLine(to: CGPoint(x: 0.0, y: 20.0))
@@ -78,9 +78,9 @@ class ArcLayer: CAShapeLayer {
         arcPath.addLine(to: CGPoint(x: 100.0, y: 100.0))
         arcPath.close()
         return arcPath
-    }()
+    }
 
-    let arcPathComplete: UIBezierPath = {
+    var arcPathComplete: UIBezierPath {
         let arcPath = UIBezierPath()
         arcPath.move(to: CGPoint(x: 0.0, y: 100.0))
         arcPath.addLine(to: CGPoint(x: 0.0, y: 0.0))
@@ -88,7 +88,7 @@ class ArcLayer: CAShapeLayer {
         arcPath.addLine(to: CGPoint(x: 100.0, y: 100.0))
         arcPath.close()
         return arcPath
-    }()
+    }
   
     func animate() {
         let arcAnimationPre: CABasicAnimation = CABasicAnimation(keyPath: "path")
