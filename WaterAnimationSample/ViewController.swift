@@ -15,8 +15,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let maskLayer = CAShapeLayer()
+         maskLayer.path = UIBezierPath(roundedRect: parentView.bounds, cornerRadius: 16.0).cgPath
+
         let animationLayer = ArcLayer()
         animationLayer.frame = parentView.bounds
+        animationLayer.mask = maskLayer
         parentView.layer.addSublayer(animationLayer)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
