@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ThF-Cw-bg3">
-                                <rect key="frame" x="79" y="89.5" width="216" height="488"/>
+                                <rect key="frame" x="87" y="89.5" width="200" height="488"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="6hI-Rw-GLF"/>
+                                    <constraint firstAttribute="width" constant="200" id="6hI-Rw-GLF"/>
                                     <constraint firstAttribute="height" constant="488" id="DBd-Vm-wOT"/>
                                 </constraints>
                             </view>

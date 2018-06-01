@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 
         // top
         bottlePath.addQuadCurve(to: CGPoint(x: parentView.bounds.width * 0.65, y: 50.0),
-                                controlPoint: CGPoint(x: parentView.bounds.width, y: 50.0))
+                                controlPoint: CGPoint(x: parentView.bounds.width, y: 100.0))
         bottlePath.addLine(to: CGPoint(x: parentView.bounds.width * 0.65, y: 20.0))
         bottlePath.addQuadCurve(to: CGPoint(x: parentView.bounds.width * 0.65 - 20.0, y: 0.0),
                                 controlPoint: CGPoint(x: parentView.bounds.width * 0.65, y: 0.0))
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
                                 controlPoint: CGPoint(x: parentView.bounds.width * 0.35, y: 0.0))
         bottlePath.addLine(to: CGPoint(x: parentView.bounds.width * 0.35, y: 50.0))
         bottlePath.addQuadCurve(to: CGPoint(x: 0.0, y: 150.0),
-                                controlPoint: CGPoint(x: 0.0, y: 50.0))
+                                controlPoint: CGPoint(x: 0.0, y: 100.0))
 
         maskLayer.path = bottlePath.cgPath
 
