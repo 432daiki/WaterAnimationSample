@@ -23,7 +23,4 @@ class ViewController: UIViewController {
             animationLayer.animate()
         }
     }
-
-    
 }
-
