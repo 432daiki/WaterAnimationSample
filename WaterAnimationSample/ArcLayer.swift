@@ -1,9 +1,9 @@
 //
 //  ArcLayer.swift
-//  SBLoader
+//  WaterAnimationSample
 //
-//  Created by Satraj Bambra on 2015-03-20.
-//  Copyright (c) 2015 Satraj Bambra. All rights reserved.
+//  Created by Daiki Shimizu on 2018/05/29.
+//  Copyright © 2018年 Daiki Shimizu. All rights reserved.
 //
 
 import UIKit
