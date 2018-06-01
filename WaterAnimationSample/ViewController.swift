@@ -16,7 +16,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let maskLayer = CAShapeLayer()
-         maskLayer.path = UIBezierPath(roundedRect: parentView.bounds, cornerRadius: 16.0).cgPath
+        let bottlePath = UIBezierPath()
+        bottlePath.move(to: CGPoint(x: 0.0, y: 150.0))
+        bottlePath.addLine(to: CGPoint(x: 0.0, y: parentView.bounds.height - 40.0))
+        bottlePath.addQuadCurve(to: CGPoint(x: 40.0, y: parentView.bounds.height),
+                                controlPoint: CGPoint(x: 0.0, y: parentView.bounds.height))
+        bottlePath.addLine(to: CGPoint(x: parentView.bounds.width - 40.0, y: parentView.bounds.height))
+        bottlePath.addQuadCurve(to: CGPoint(x: parentView.bounds.width, y: parentView.bounds.height - 40.0),
+                                controlPoint: CGPoint(x: parentView.bounds.width, y: parentView.bounds.height))
+        bottlePath.addLine(to: CGPoint(x: parentView.bounds.width, y: 150.0))
+        bottlePath.addCurve(to: CGPoint(x: 0.0, y: 150.0),
+                            controlPoint1: CGPoint(x: parentView.bounds.width, y: 0.0),
+                            controlPoint2: CGPoint(x: 0.0, y: 0.0))
+        maskLayer.path = bottlePath.cgPath
 
         let animationLayer = ArcLayer()
         animationLayer.frame = parentView.bounds
