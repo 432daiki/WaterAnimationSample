@@ -24,68 +24,68 @@ class ArcLayer: CAShapeLayer {
 
     var arcPathPre: UIBezierPath {
         let arcPath = UIBezierPath()
-        arcPath.move(to: CGPoint(x: 0.0, y: 100.0))
-        arcPath.addLine(to: CGPoint(x: 0.0, y: 99.0))
-        arcPath.addLine(to: CGPoint(x: 100.0, y: 99.0))
-        arcPath.addLine(to: CGPoint(x: 100.0, y: 100.0))
+        arcPath.move(to: CGPoint(x: 0.0, y: bounds.height))
+        arcPath.addLine(to: CGPoint(x: 0.0, y: bounds.height - 1.0))
+        arcPath.addLine(to: CGPoint(x: bounds.width, y: bounds.height - 1.0))
+        arcPath.addLine(to: CGPoint(x: bounds.width, y: bounds.height))
         arcPath.close()
         return arcPath
     }
 
     var arcPathStarting: UIBezierPath {
         let arcPath = UIBezierPath()
-        arcPath.move(to: CGPoint(x: 0.0, y: 100.0))
-        arcPath.addLine(to: CGPoint(x: 0.0, y: 80.0))
-        arcPath.addCurve(to: CGPoint(x: 100.0, y: 80.0),
-                         controlPoint1: CGPoint(x: 30.0, y: 70.0),
-                         controlPoint2: CGPoint(x: 40.0, y: 90.0))
-        arcPath.addLine(to: CGPoint(x: 100.0, y: 100.0))
+        arcPath.move(to: CGPoint(x: 0.0, y: bounds.height))
+        arcPath.addLine(to: CGPoint(x: 0.0, y: bounds.height * 0.8))
+        arcPath.addCurve(to: CGPoint(x: bounds.width, y: bounds.height * 0.8),
+                         controlPoint1: CGPoint(x: bounds.width * 0.3, y: bounds.height * 0.7),
+                         controlPoint2: CGPoint(x: bounds.width * 0.4, y: bounds.height * 0.9))
+        arcPath.addLine(to: CGPoint(x: bounds.width, y: bounds.height))
         arcPath.close()
         return arcPath
     }
 
     var arcPathLow: UIBezierPath {
         let arcPath = UIBezierPath()
-        arcPath.move(to: CGPoint(x: 0.0, y: 100.0))
-        arcPath.addLine(to: CGPoint(x: 0.0, y: 60.0))
-        arcPath.addCurve(to: CGPoint(x: 100.0, y: 60.0),
-                         controlPoint1: CGPoint(x: 30.0, y: 65.0),
-                         controlPoint2: CGPoint(x: 40.0, y: 50.0))
-        arcPath.addLine(to: CGPoint(x: 100.0, y: 100.0))
+        arcPath.move(to: CGPoint(x: 0.0, y: bounds.height))
+        arcPath.addLine(to: CGPoint(x: 0.0, y: bounds.height * 0.6))
+        arcPath.addCurve(to: CGPoint(x: bounds.width, y: bounds.height * 0.6),
+                         controlPoint1: CGPoint(x: bounds.width * 0.3, y: bounds.width * 0.65),
+                         controlPoint2: CGPoint(x: bounds.width * 0.4, y: bounds.height * 0.5))
+        arcPath.addLine(to: CGPoint(x: bounds.width, y: bounds.height))
         arcPath.close()
         return arcPath
     }
 
     var arcPathMid: UIBezierPath {
         let arcPath = UIBezierPath()
-        arcPath.move(to: CGPoint(x: 0.0, y: 100.0))
-        arcPath.addLine(to: CGPoint(x: 0.0, y: 40.0))
-        arcPath.addCurve(to: CGPoint(x: 100.0, y: 40.0),
-                         controlPoint1: CGPoint(x: 30.0, y: 30.0),
-                         controlPoint2: CGPoint(x: 40.0, y: 50.0))
-        arcPath.addLine(to: CGPoint(x: 100.0, y: 100.0))
+        arcPath.move(to: CGPoint(x: 0.0, y: bounds.height))
+        arcPath.addLine(to: CGPoint(x: 0.0, y: bounds.height * 0.4))
+        arcPath.addCurve(to: CGPoint(x: bounds.width, y: bounds.height * 0.4),
+                         controlPoint1: CGPoint(x: bounds.width * 0.3, y: bounds.height * 0.3),
+                         controlPoint2: CGPoint(x: bounds.width * 0.4, y: bounds.height * 0.5))
+        arcPath.addLine(to: CGPoint(x: bounds.width, y: bounds.height))
         arcPath.close()
         return arcPath
     }
 
     var arcPathHigh: UIBezierPath {
         let arcPath = UIBezierPath()
-        arcPath.move(to: CGPoint(x: 0.0, y: 100.0))
-        arcPath.addLine(to: CGPoint(x: 0.0, y: 20.0))
-        arcPath.addCurve(to: CGPoint(x: 100.0, y: 20.0),
-                         controlPoint1: CGPoint(x: 30.0, y: 25.0),
-                         controlPoint2: CGPoint(x: 40.0, y: 10.0))
-        arcPath.addLine(to: CGPoint(x: 100.0, y: 100.0))
+        arcPath.move(to: CGPoint(x: 0.0, y: bounds.height))
+        arcPath.addLine(to: CGPoint(x: 0.0, y: bounds.height * 0.2))
+        arcPath.addCurve(to: CGPoint(x: bounds.width, y: bounds.height * 0.2),
+                         controlPoint1: CGPoint(x: bounds.width * 0.3, y: bounds.height * 0.25),
+                         controlPoint2: CGPoint(x: bounds.width * 0.4, y: bounds.height * 0.1))
+        arcPath.addLine(to: CGPoint(x: bounds.width, y: bounds.height))
         arcPath.close()
         return arcPath
     }
 
     var arcPathComplete: UIBezierPath {
         let arcPath = UIBezierPath()
-        arcPath.move(to: CGPoint(x: 0.0, y: 100.0))
+        arcPath.move(to: CGPoint(x: 0.0, y: bounds.height))
         arcPath.addLine(to: CGPoint(x: 0.0, y: 0.0))
-        arcPath.addLine(to: CGPoint(x: 100.0, y: 0.0))
-        arcPath.addLine(to: CGPoint(x: 100.0, y: 100.0))
+        arcPath.addLine(to: CGPoint(x: bounds.width, y: 0.0))
+        arcPath.addLine(to: CGPoint(x: bounds.width, y: bounds.height))
         arcPath.close()
         return arcPath
     }
